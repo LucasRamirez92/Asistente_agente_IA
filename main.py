@@ -10,7 +10,7 @@ if sys.stdout.encoding != 'utf-8':
 
 # --- CONFIGURACIÓN DE API ---
 # RECUERDA: La llave debe estar "Restringida a Gemini API" en Google AI Studio
-API_KEY = "AIzaSyDfIqZxjLe0aoH2h6zsG-UFWRG23YdO46Q" 
+API_KEY = "TU_KEY" 
 client = genai.Client(api_key=API_KEY)
 
 def ejecutar_asistente():
