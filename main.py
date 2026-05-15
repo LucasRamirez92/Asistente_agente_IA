@@ -15,7 +15,7 @@ client = genai.Client(api_key=API_KEY)
 
 def ejecutar_asistente():
     print("\n" + "="*40)
-    print("🤖 ASISTENTE ACTIVO - ESPERANDO ORDEN")
+    print("ASISTENTE ACTIVO - ESPERANDO ORDEN")
     print("="*40)
     
     # Pedido por texto (El siguiente paso sería cambiar esto por Whisper/Voz)
@@ -48,7 +48,7 @@ def ejecutar_asistente():
             comando = comando.replace("/", "\\")
 
         if comando:
-            print(f"🚀 Ejecutando comando: {comando}")
+            print(f"Ejecutando comando: {comando}")
             print("-" * 40)
             
             # Ejecución real en el sistema
@@ -56,15 +56,15 @@ def ejecutar_asistente():
             
             if resultado == 0:
                 print("-" * 40)
-                print("✅ ¡Misión cumplida con éxito!")
+                print("¡Misión cumplida con éxito!")
             else:
                 print("-" * 40)
-                print("⚠️ El comando se ejecutó pero el sistema devolvió un error.")
+                print("El comando se ejecutó pero el sistema devolvió un error.")
         else:
-            print("❌ La IA no generó un comando claro.")
+            print("La IA no generó un comando claro.")
 
     except Exception as e:
-        print(f"❌ Error crítico: {e}")
+        print(f"Error crítico: {e}")
 
 if __name__ == "__main__":
     print("--------------------------------------------------")
